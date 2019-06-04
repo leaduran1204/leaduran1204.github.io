@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+  z-index:0;
+}
+
+.writing {
+  padding: 400px;
+  text-align: left;
+  background: transparent;
+  z-index:2;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  z-index:0;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  z-index:0;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  z-index:0;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  z-index:0;
+}
+
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  z-index:0;
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  z-index:0;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  z-index:0;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  z-index:0;
+  position:relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  z-index:0;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  z-index:0;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+#menu {
+  position:relative;
+  top:100;
+  left:600;
+}
+
+</style>
+<Style type="text/css">
+     nav ul ul {
+display: none;
+}
+
+nav ul li:hover > ul {
+display: block;
+width: 0px;
+}
+
+nav ul {
+background: #000000; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 310px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+nav ul li {
+float: left;
+width: 785px;
+text-align: center;
+color: #FFFFFF;
+}
+
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+</STYLE>
+</head>
+<NAV>
+<body style="background-color:powderblue;">
+
+<div class="header">
+  <h1>PITBULL</h1>
+  <p>By Ryan Tseng, Lea</p>
+</div>
+
+ <SPAN style = "font-size: 20px; color: #2886F0; font-family: 'futura';"> 
+<UL>
+  <LI>Other Related Websites 
+   <UL>
+    <LI><A href='https://www.petfinder.com/pet-adoption/dog-adoption/myths-and-facts-about-pit-bulls/'>1 Website about Pitbulls</A></LI>
+    <LI><A href='https://www.mnn.com/family/pets/stories/5-ways-you-can-help-pit-bulls-and-1-involves-extremely-cute-puppy-photos'>2 Website about how to help Pitbulls</A></LI>
+    <LI><A href='https://www.cartoonmad.com/comic/1221.html'>3 Website about Pitbulls</A></LI>
+    <LI><A href='https://barkpost.com/good/pit-bulls-history-of-americas-dog/'>4 Website about Pitbulls</A></LI>
+   </UL>
+  </LI>
+</UL>
+</SPAN>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>What Are Pitbulls</h2>
+      <h5>Picture of Pitbulls</h5>
+      <IMG border=3 src='166624734.jpg' width='300px' name='pic1'></IMG>
+      <TABLE border=0>
+        <TR>
+          <TD><IMG border=3 width=30 height=30 src='active.png' name='dot1'onclick="src='active.png';dot2.src='unactive.png';dot3.src='unactive.png';pic1.src='166624734.jpg';"></IMG></TD>
+          <TD><IMG border=3 width=30 height=30 src='unactive.png' name='dot2'onclick="src='active.png';dot1.src='unactive.png';dot3.src='unactive.png';pic1.src='This-Pitbull-is-Not-Dangerous.jpg';"></IMG></TD>
+           <TD> <IMG border=3 width=30 height=30 src='unactive.png' name='dot3'onclick="src='active.png';dot2.src='unactive.png';dot1.src='unactive.png';pic1.src='images.jpg';"></IMG></TD></TR></TABLE>
+<SPAN style="color:#;font-family:'#';font-size:">
+
+</SPAN>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>Why most people dislike pitbulls</h2>
+      <h5></h5>
+      <p>Some breeds are independent, even if they've been raised by the same person since they are puppies; others bond closely to one person and are indifferent to everyone else; and some shower the whole family with affection. Breed isn't the only factor that goes into affection levels; dogs who were raised inside a home with people around feel more comfortable with humans and bond more easily.
+
+ Being gentle with kids, have a great attitude toward running, screaming children are all things that make a kid-friendly dog. Pit bulls are really good with children, Small, and snappy dogs like Chihuahuas not are really family-friendly. Dogs from any breed can be good with children based on their past experiences, training on how to get along with kids, and personality. No matter what the breed or breed type, all dogs have strong jaws, sharp pointy teeth, and may bite in stressful circumstances. 
+                
+The American Pit Bull Terrier is one of the “bully breeds” which are often labeled a pit bull. In fact, "pit bull" isn't a breed, but a term used to describe the American Pit Bull Terrier, the Bull Terrier, the American Staffordshire Terrier, and the Staffordshire Bull Terrier. Some people say the American Pit Bull Terrier is the same as the American Staffordshire Terrier. The qualities that make these dogs firm players in obedience and agility games also attract highly unscrupulous people looking for strong competitors for their dog fighting rings. The result is that bull breeds, pit bulls have gained a reputation over years for being dangerous.Nothing could be further from the truth. 
+</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+    <div class="card">
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+<SPAN style = "font-size: 20px; color: #2886F0; font-family: 'futura';"> 
+
+
+</SPAN>
+</DIV>
+
+</body>
+</html>
